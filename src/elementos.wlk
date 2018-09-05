@@ -8,6 +8,7 @@ object castillo {
 		nivelDeDefensa -= potencia
 	}
 	
+	
 	method valorQueOtorga(){
 		return nivelDeDefensa / 5
 	}

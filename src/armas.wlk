@@ -5,6 +5,7 @@ object ballesta {
 		cantFlechas -= 1
 	}
 	
+	
 	method estaCargada(){
 		return cantFlechas > 0
 	}
