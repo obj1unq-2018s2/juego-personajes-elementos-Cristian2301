@@ -17,11 +17,16 @@ object floki {
 
 object mario {
 	var valorRecolectado = 0
+	var ultimoElementoEncontrado
 	
 	method encontrar(elemento) {
 	    valorRecolectado += elemento.valorQueOtorga()
 	    elemento.recibirTrabajo()
-	    // ... acá hay que agregar una línea ...
+	    ultimoElementoEncontrado = elemento
+	}
+	
+	method estaFeliz(){
+		return valorRecolectado >= 50 or ultimoElementoEncontrado.altura() >= 10		
 	}
 }
 
